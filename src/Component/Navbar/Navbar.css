@@ -1,0 +1,195 @@
+.main-nav {
+  background-color: transparent;
+}
+.main-nav nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.main-nav nav .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-nav nav .navbar-nav .nav-item {
+  position: relative;
+  padding: 15px 0;
+}
+.main-nav nav .navbar-nav .nav-item a {
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  color: #071327;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--fontFamily2);
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.main-nav nav .navbar-nav .nav-item a i {
+  right: 0;
+  top: 7px;
+  font-size: 12px;
+  position: absolute;
+}
+.main-nav nav .navbar-nav .nav-item a:hover {
+  color: #3f9f42;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.main-nav nav .navbar-nav .nav-item a.dropdown-toggle {
+  padding-right: 15px;
+  position: relative;
+}
+.main-nav nav .navbar-nav .nav-item a.dropdown-toggle::after {
+  content: "\f107";
+  font-family: "font awesome 5 free";
+  position: absolute;
+  top: 2px;
+  right: 0;
+  border: 0;
+  font-size: 13px;
+}
+.main-nav nav .navbar-nav .nav-item a.active {
+  color: #3f9f42;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.main-nav nav .navbar-nav .nav-item:hover a {
+  color: #3f9f42;
+}
+.main-nav nav .navbar-nav .nav-item:hover ul {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  visibility: visible;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  left: 0;
+  top: 60px;
+  opacity: 0;
+  z-index: 99;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transform: rotateX(-20deg);
+  transform: rotateX(-20deg);
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  background: var(--whiteColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li {
+  position: relative;
+  padding: 0;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
+  margin: 0;
+  display: block;
+  padding: 7px 20px;
+  color: #071327;
+  border-bottom: 1px dashed transparent;
+  font-size: 15px;
+  font-weight: 600;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
+  top: 50%;
+  position: absolute;
+  right: 10px !important;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a::before {
+  content: "\f0da";
+  font-size: 0;
+  color: #3f9f42;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover,
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
+  color: #3f9f42;
+  padding-left: 25px;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover::before,
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active::before {
+  font-size: 15px;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+  position: absolute;
+  left: 101%;
+  top: 0;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+.main-nav
+  nav
+  .navbar-nav
+  .nav-item
+  .dropdown-menu
+  li
+  .dropdown-menu
+  li
+  .dropdown-menu {
+  top: 20px;
+  left: 100%;
+  position: absolute;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+  color: #071327;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover,
+.main-nav
+  nav
+  .navbar-nav
+  .nav-item
+  .dropdown-menu
+  li
+  .dropdown-menu
+  li
+  a.active {
+  color: #3f9f42;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+.main-nav
+  nav
+  .navbar-nav
+  .nav-item
+  .dropdown-menu
+  li:hover
+  .dropdown-menu
+  li:hover
+  .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover a {
+  color: #3f9f42;
+}
+.main-nav nav .navbar-nav .nav-item:last-child .dropdown-menu {
+  left: auto;
+  right: 0;
+}
